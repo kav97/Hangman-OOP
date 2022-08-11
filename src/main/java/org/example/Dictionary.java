@@ -32,11 +32,11 @@ public class Dictionary {
         animals.add("shark");
     }
 
-    public static String generateName() {
+    public static String generateAnimal() {
         return animals.get( RANDOM.nextInt( animals.size()) );
     }
 
     public static void main(String[] args) {
-        System.out.println(generateName());
+        System.out.println(generateAnimal());
     }
 }
