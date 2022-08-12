@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Scanner;
 
-public class UserInteraction {
+public class UserInput {
     public String getInput() {
 
         System.out.println("Guess a letter: ");
