@@ -18,7 +18,6 @@ public class Main {
         }
 
         System.out.println( hiddenWord );
-        System.out.println( word );
 
         while ( livesRemaining > 0 ) {
 
