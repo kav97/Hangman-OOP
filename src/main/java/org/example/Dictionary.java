@@ -49,14 +49,9 @@ public class Dictionary {
         animals.add("penguin");
         animals.add("koala");
         animals.add("jellyfish");
-        animals.add("jellyfish");
     }
 
     public static String getAnimal() {
         return animals.get( RANDOM.nextInt( animals.size()) );
-    }
-
-    public static void main(String[] args) {
-        System.out.println(getAnimal());
     }
 }
