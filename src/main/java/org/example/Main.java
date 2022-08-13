@@ -3,17 +3,18 @@ package org.example;
 import java.util.ArrayList;
 
 public class Main {
+
     public static void main( String[] args ) {
 
         System.out.println( "Welcome to hangman..." );
 
-        int livesRemaining = 7;
+        byte livesRemaining = 7;
 
         String word = Dictionary.getAnimal();
 
         ArrayList<String> hiddenWord = new ArrayList<>();
 
-        for ( int i = 0; i < word.length(); i++ ){
+        for ( byte i = 0; i < word.length(); i++ ){
             hiddenWord.add( "_" );
         }
 
@@ -26,7 +27,7 @@ public class Main {
 
             if ( word.contains( currentInput ) ){
                 System.out.println( "You guessed correct!" );
-                for ( int i = 0; i < word.length(); i++ ){
+                for ( byte i = 0; i < word.length(); i++ ){
                     if ( word.charAt(i) == currentInput.charAt(0) ){
                         hiddenWord.set( i, Character.toString(word.charAt(i) ) );
                     }
